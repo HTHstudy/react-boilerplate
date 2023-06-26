@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+    commands:
+      - yarn set version berry
+      - yarn install --immutable
+
+  pre_build:
+    commands:
+      - yarn build
+
+  build:
+    commands:
+      - aws s3 sync dist s3://${AWS_S3_BUCKET_NAME} --delete
+
+  post_build:
+    commands:
+      - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} --paths "/*"
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'dist'
+
+cache:
+  paths:
+    - ~/.yarn/cache

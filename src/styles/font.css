@@ -1,0 +1,29 @@
+@import url("//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css");
+
+@font-face {
+  font-family: "mapoflower";
+  src: url("https://s3.ap-northeast-2.amazonaws.com/images.orderhae.com/fonts/MapoFlowerIsland.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NotoSerifKR-bold";
+  src: url("https://s3.ap-northeast-2.amazonaws.com/images.orderhae.com/fonts/NotoSerifKR-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSerifKR-semibold";
+  src: url("https://s3.ap-northeast-2.amazonaws.com/images.orderhae.com/fonts/NotoSerifKR-SemiBold.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSerifKR-light";
+  src: url("https://s3.ap-northeast-2.amazonaws.com/images.orderhae.com/fonts/NotoSerifCJKkr-ExtraLight-subset.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "NotoSerifKR";
+  src: url("https://s3.ap-northeast-2.amazonaws.com/images.orderhae.com/fonts/NotoSerifKR-Regular.woff2")
+    format("woff2");
+}
